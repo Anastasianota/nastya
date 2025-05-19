@@ -1,36 +1,23 @@
-<html>
+<html lang="ru">
 <head>
-<title>Текст</title>
-<style>
-body {
-font-family: Arial, sans-serif;
-margin: 20px;
-}
-input {
-margin: 5px;
-padding: 10px;
-font-size: 16px;
-}
-button {
-padding: 10px 15px;
-font-size: 16px;
-cursor: pointer;
-}
-</style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>fff</title>
 </head>
 <body>
-<h1>Умножение на 2</h1>
-<label for="inputValue">Введите число:</label>
-<input id="inputValue" placeholder="Введите число" />
-<button onclick="multiply()">Кнопка</button>
-<h2>Результат:</h2>
-<input type="text" id="result" readonly />
+<h1>TEXT</h1>
+<input type="text" id="inputField" name="inputField">
+<button id='but' type="submit">post</button>
+<img src="https://s.hdnux.com/photos/01/45/60/30/26674738/3/rawImage.jpg" alt="Image" width="300">
 <script>
-function multiply() {
-const inputValue = document.getElementById('inputValue').value;
-const result = inputValue * 2;
-document.getElementById('result').value = result;
+document.getElementById('but').addEventListener('click', ()=> { 
+//
+if (!isNaN(document.getElementById('inputField').value) && document.getElementById('inputField').value.trim() !== '') {
+alert("yes");
+} else {
+alert("error");
 }
-</script>
+})
+</SCRIPT>
 </body>
 </html>
